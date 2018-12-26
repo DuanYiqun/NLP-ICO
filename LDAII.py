@@ -44,7 +44,7 @@ import io
 sns.set()
 
 # Settting input File Path
-train_data = pd.read_csv("/Users/jinfeng/Documents/Test/test.csv")
+train_data = pd.read_csv("./test.csv")
 
 
 # Measure the length of content
@@ -180,7 +180,7 @@ corpus = train_data.bow
 # pprint(lda_model.print_topics())
 # doc_lda = lda_model[corpus]
 
-mallet_path = "/Users/jinfeng/Downloads/mallet-2.0.8/bin/mallet"
+mallet_path = "./mallet-2.0.8/bin/mallet"
 
 
 def compute_coherence_values(dictionary, corpus, texts, limit, start=2, step=3):
